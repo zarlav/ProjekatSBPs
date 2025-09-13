@@ -10,5 +10,6 @@ namespace ProjekatSBP.Entiteti
     {
         public virtual int ApoenID { get; set; }
         public virtual int Vrednost { get; set; }
+        public virtual int tip { get; set; } 
     }
 }

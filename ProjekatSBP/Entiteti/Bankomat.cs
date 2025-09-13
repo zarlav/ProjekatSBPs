@@ -10,8 +10,5 @@ namespace ProjekatSBP.Entiteti
     {
         public virtual double MaxIznos { get; set; }
         public virtual IList<BrojNovcanicaUBankomat> brojNovcanica { get; set; } = new List<BrojNovcanicaUBankomat>();
-
-        
-
     }
 }

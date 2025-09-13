@@ -12,11 +12,18 @@ namespace ProjekatSBP.Mapiranja
     {
         public ApoenMapiranja()
         {
-            // Mapiranje klase Apoen na tabelu Apoen
             Table("Apoen");
-            Id(x => x.ApoenID).Column("ApoenID").GeneratedBy.Assigned();
-            Map(x => x.Vrednost).Column("Vrednost").Not.Nullable().Unique().LazyLoad();
-
+            Id(x => x.ApoenID)
+                .Column("ApoenID")
+                .GeneratedBy.Identity();  
+            Map(x => x.tip)
+                .Column("Tip")
+                .Not.Nullable();
+            Map(x => x.Vrednost)
+                .Column("Vrednost")
+                .Not.Nullable();
+            LazyLoad();
         }
     }
+
 }

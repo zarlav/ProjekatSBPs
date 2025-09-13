@@ -18,7 +18,7 @@ namespace ProjekatSBP.Mapiranja
             Map(x => x.registar, "Registar");
             Map(x => x.osnivac, "Osnivac");
             Map(x => x.adresa, "Adresa");
-            Map(x => x.tip, "TipOrganizacije");
+            Map(x => x.tipOrganizacije, "TipOrganizacije");
             HasMany(x => x.Telefoni)
                 .Table("KontaktTelefonOrganizacija")
                 .KeyColumn("KlijentId")

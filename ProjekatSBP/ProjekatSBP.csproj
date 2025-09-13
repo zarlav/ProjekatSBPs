@@ -105,6 +105,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataLayer.cs" />
+    <Compile Include="DTOmanager.cs" />
+    <Compile Include="DTOs.cs" />
     <Compile Include="Entiteti\Apoen.cs" />
     <Compile Include="Entiteti\Banka.cs" />
     <Compile Include="Entiteti\Bankomat.cs" />
@@ -126,11 +128,41 @@
     <Compile Include="Entiteti\UplatniAutomat.cs" />
     <Compile Include="Entiteti\Uredjaj.cs" />
     <Compile Include="Entiteti\VrstaUplate.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Forme\BankaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forme\BankaForm.Designer.cs">
+      <DependentUpon>BankaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FilijaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FilijaleForm.Designer.cs">
+      <DependentUpon>FilijaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\KarticeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\KarticeForm.Designer.cs">
+      <DependentUpon>KarticeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\KlijentiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\KlijentiForm.Designer.cs">
+      <DependentUpon>KlijentiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\RacuniForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\RacuniForm.Designer.cs">
+      <DependentUpon>RacuniForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\TransakcijeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\TransakcijeForm.Designer.cs">
+      <DependentUpon>TransakcijeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Mapiranja\ApoenMapiranja.cs" />
     <Compile Include="Mapiranja\BankaMapiranja.cs" />
@@ -152,10 +184,43 @@
     <Compile Include="Mapiranja\UplatniAutomatMapiranja.cs" />
     <Compile Include="Mapiranja\UredjajMapiranja.cs" />
     <Compile Include="Mapiranja\VrstaUplateMapiranja.cs" />
+    <Compile Include="pocetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pocetna.Designer.cs">
+      <DependentUpon>pocetna.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forme\UredjajiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\UredjajiForm.Designer.cs">
+      <DependentUpon>UredjajiForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forme\BankaForm.resx">
+      <DependentUpon>BankaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FilijaleForm.resx">
+      <DependentUpon>FilijaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\KarticeForm.resx">
+      <DependentUpon>KarticeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\KlijentiForm.resx">
+      <DependentUpon>KlijentiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\RacuniForm.resx">
+      <DependentUpon>RacuniForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\TransakcijeForm.resx">
+      <DependentUpon>TransakcijeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\UredjajiForm.resx">
+      <DependentUpon>UredjajiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pocetna.resx">
+      <DependentUpon>pocetna.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -165,6 +230,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>
@@ -186,6 +252,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Slika.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

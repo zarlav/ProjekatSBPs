@@ -8,7 +8,7 @@ namespace ProjekatSBP.Entiteti
 {
     public class KreditnaKartica : Kartica
     {
-        public virtual decimal MaxPeriodOtplate { get; set; }
+        public virtual int MaxPeriodOtplate { get; set; }
         public virtual decimal MesecniLimit { get; set; }
     }
 }

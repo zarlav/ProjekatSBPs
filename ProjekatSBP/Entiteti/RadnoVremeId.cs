@@ -8,7 +8,7 @@ namespace ProjekatSBP.Entiteti
 {
     public class RadnoVremeId
     {
-        public virtual Filijala Filijala { get; set; }   // direktno referenca
+        public virtual Filijala Filijala { get; set; }   
         public virtual string Dan { get; set; }
 
         public override bool Equals(object obj)

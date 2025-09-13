@@ -31,8 +31,8 @@ namespace ProjekatSBP.Mapiranja
             References(x => x.SastojiSeOd).Column("BankaID").LazyLoad().Cascade.None();
             HasMany(x => x.RadnaVremena)
                 .KeyColumn("FilijalaID")
-                .Cascade.All()        // automatski save/update/delete
-                .Inverse()            // RadnoVreme ima referencu na Filijala
+                .Cascade.All()      
+                .Inverse()            
                 .LazyLoad();
         }
     }

@@ -19,7 +19,8 @@ namespace ProjekatSBP.Mapiranja
                 .Table("PodrzavaUplatu")
                 .ParentKeyColumn("VrstaUplateID")
                 .ChildKeyColumn("UredjajID")
-                .Cascade.None();
+                    .Cascade.None()
+                    .Inverse();
         }
     }
 }

@@ -11,7 +11,6 @@ namespace ProjekatSBP.Mapiranja
     {
         public ServisMapiranja()
         {
-            // Mapiranje klase Servis na tabelu Servis
             Table("Servis");
             Id(x => x.ServisID).Column("ServisID").GeneratedBy.Sequence("SERVIS_SEQ");
             Map(x => x.Naziv).Column("Naziv").LazyLoad();
